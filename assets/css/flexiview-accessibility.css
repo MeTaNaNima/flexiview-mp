@@ -1,0 +1,462 @@
+:root {
+	--flexiview-outline-width: 2px;
+	--flexiview-outline-offset: 4px;
+	--flexiview-reading-mask: rgba(0, 0, 0, 0.8);
+}
+
+/* readable-font*/
+body.flexiview-readable-font *:not(i) {
+	font-family: Arial, Helvetica, Verdana, sans-serif !important;
+}
+
+/* dyslexia-font */
+body.flexiview-dyslexia-font,
+body.flexiview-dyslexia-font h1,
+body.flexiview-dyslexia-font h1 span,
+body.flexiview-dyslexia-font h2,
+body.flexiview-dyslexia-font h2 span,
+body.flexiview-dyslexia-font h3,
+body.flexiview-dyslexia-font h3 span,
+body.flexiview-dyslexia-font h4,
+body.flexiview-dyslexia-font h4 span,
+body.flexiview-dyslexia-font h5,
+body.flexiview-dyslexia-font h5 span,
+body.flexiview-dyslexia-font h6,
+body.flexiview-dyslexia-font h6 span,
+body.flexiview-dyslexia-font a,
+body.flexiview-dyslexia-font p,
+body.flexiview-dyslexia-font li a,
+body.flexiview-dyslexia-font label,
+body.flexiview-dyslexia-font input,
+body.flexiview-dyslexia-font select,
+body.flexiview-dyslexia-font textarea,
+body.flexiview-dyslexia-font legend,
+body.flexiview-dyslexia-font code,
+body.flexiview-dyslexia-font pre,
+body.flexiview-dyslexia-font dd,
+body.flexiview-dyslexia-font dt,
+body.flexiview-dyslexia-font span,
+body.flexiview-dyslexia-font blockquote {
+	font-family: 'OpenDyslexic', serif !important;
+}
+
+/* Exclude icons in psudo elements */
+body.flexiview-readable-font *::before,
+body.flexiview-readable-font *::after,
+body.flexiview-dyslexia-font *::before,
+body.flexiview-dyslexia-font *::after {
+	font-family: inherit !important;
+}
+
+/* highlight-titles */
+body.flexiview-highlight-titles h1,
+body.flexiview-highlight-titles h2,
+body.flexiview-highlight-titles h3,
+body.flexiview-highlight-titles h4,
+body.flexiview-highlight-titles h5,
+body.flexiview-highlight-titles h6,
+body.flexiview-highlight-titles [role='heading'] {
+	outline-style: solid !important;
+	outline-color: var(--flexiview-accent) !important;
+	outline-width: var(--flexiview-outline-width) !important;
+	outline-offset: var(--flexiview-outline-offset) !important;
+}
+
+/* highlight-links */
+body.flexiview-highlight-links a,
+[ng-click*=''] {
+	outline-style: solid !important;
+	outline-color: #28a228 !important;
+	outline-width: var(--flexiview-outline-width) !important;
+	outline-offset: var(--flexiview-outline-offset) !important;
+}
+
+/* text-magnifier */
+body.flexiview-text-magnifier .flexiview-text-magnifier-tooltip {
+	position: fixed;
+	padding: 16px;
+	border-radius: 4px;
+	background: #333;
+	color: #fff;
+	font-size: 36px !important;
+	line-height: 1.5;
+	z-index: 999999;
+	word-break: break-word;
+	max-width: 680px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	background-color: #333333 !important;
+	color: #ffffff !important;
+	font-size: 36px !important;
+}
+
+/* content-scaling */
+
+/* font-size */
+
+/* line-height */
+
+/* letter-spacing */
+
+/* align-left */
+body.flexiview-align-left,
+body.flexiview-align-left h1,
+body.flexiview-align-left h1 span,
+body.flexiview-align-left h2,
+body.flexiview-align-left h2 span,
+body.flexiview-align-left h3,
+body.flexiview-align-left h3 span,
+body.flexiview-align-left h4,
+body.flexiview-align-left h4 span,
+body.flexiview-align-left h5,
+body.flexiview-align-left h5 span,
+body.flexiview-align-left h6,
+body.flexiview-align-left h6 span,
+body.flexiview-align-left p,
+body.flexiview-align-left li,
+body.flexiview-align-left label,
+body.flexiview-align-left input,
+body.flexiview-align-left select,
+body.flexiview-align-left textarea,
+body.flexiview-align-left legend,
+body.flexiview-align-left code,
+body.flexiview-align-left pre,
+body.flexiview-align-left dd,
+body.flexiview-align-left dt,
+body.flexiview-align-left span,
+body.flexiview-align-left blockquote {
+	text-align: left !important;
+}
+
+/* align-center */
+body.flexiview-align-center,
+body.flexiview-align-center h1,
+body.flexiview-align-center h1 span,
+body.flexiview-align-center h2,
+body.flexiview-align-center h2 span,
+body.flexiview-align-center h3,
+body.flexiview-align-center h3 span,
+body.flexiview-align-center h4,
+body.flexiview-align-center h4 span,
+body.flexiview-align-center h5,
+body.flexiview-align-center h5 span,
+body.flexiview-align-center h6,
+body.flexiview-align-center h6 span,
+body.flexiview-align-center p,
+body.flexiview-align-center li,
+body.flexiview-align-center label,
+body.flexiview-align-center input,
+body.flexiview-align-center select,
+body.flexiview-align-center textarea,
+body.flexiview-align-center legend,
+body.flexiview-align-center code,
+body.flexiview-align-center pre,
+body.flexiview-align-center dd,
+body.flexiview-align-center dt,
+body.flexiview-align-center span,
+body.flexiview-align-center blockquote {
+	text-align: center !important;
+}
+
+/* align-right */
+body.flexiview-align-right,
+body.flexiview-align-right h1,
+body.flexiview-align-right h1 span,
+body.flexiview-align-right h2,
+body.flexiview-align-right h2 span,
+body.flexiview-align-right h3,
+body.flexiview-align-right h3 span,
+body.flexiview-align-right h4,
+body.flexiview-align-right h4 span,
+body.flexiview-align-right h5,
+body.flexiview-align-right h5 span,
+body.flexiview-align-right h6,
+body.flexiview-align-right h6 span,
+body.flexiview-align-right p,
+body.flexiview-align-right li,
+body.flexiview-align-right label,
+body.flexiview-align-right input,
+body.flexiview-align-right select,
+body.flexiview-align-right textarea,
+body.flexiview-align-right legend,
+body.flexiview-align-right code,
+body.flexiview-align-right pre,
+body.flexiview-align-right dd,
+body.flexiview-align-right dt,
+body.flexiview-align-right span,
+body.flexiview-align-right blockquote {
+	text-align: right !important;
+}
+
+/* text-ltr */
+/*
+body.flexiview-text-ltr,
+body.flexiview-text-ltr h1,
+body.flexiview-text-ltr h1 span,
+body.flexiview-text-ltr h2,
+body.flexiview-text-ltr h2 span,
+body.flexiview-text-ltr h3,
+body.flexiview-text-ltr h3 span,
+body.flexiview-text-ltr h4,
+body.flexiview-text-ltr h4 span,
+body.flexiview-text-ltr h5,
+body.flexiview-text-ltr h5 span,
+body.flexiview-text-ltr h6,
+body.flexiview-text-ltr h6 span,
+body.flexiview-text-ltr p,
+body.flexiview-text-ltr li,
+body.flexiview-text-ltr label,
+body.flexiview-text-ltr input,
+body.flexiview-text-ltr select,
+body.flexiview-text-ltr textarea,
+body.flexiview-text-ltr legend,
+body.flexiview-text-ltr code,
+body.flexiview-text-ltr pre,
+body.flexiview-text-ltr dd,
+body.flexiview-text-ltr dt,
+body.flexiview-text-ltr span,
+body.flexiview-text-ltr blockquote {
+	direction: ltr !important;
+}
+*/
+
+/* text-ltr */
+/*
+body.flexiview-text-rtl,
+body.flexiview-text-rtl h1,
+body.flexiview-text-rtl h1 span,
+body.flexiview-text-rtl h2,
+body.flexiview-text-rtl h2 span,
+body.flexiview-text-rtl h3,
+body.flexiview-text-rtl h3 span,
+body.flexiview-text-rtl h4,
+body.flexiview-text-rtl h4 span,
+body.flexiview-text-rtl h5,
+body.flexiview-text-rtl h5 span,
+body.flexiview-text-rtl h6,
+body.flexiview-text-rtl h6 span,
+body.flexiview-text-rtl p,
+body.flexiview-text-rtl li,
+body.flexiview-text-rtl label,
+body.flexiview-text-rtl input,
+body.flexiview-text-rtl select,
+body.flexiview-text-rtl textarea,
+body.flexiview-text-rtl legend,
+body.flexiview-text-rtl code,
+body.flexiview-text-rtl pre,
+body.flexiview-text-rtl dd,
+body.flexiview-text-rtl dt,
+body.flexiview-text-rtl span,
+body.flexiview-text-rtl blockquote {
+	direction: rtl !important;
+}
+*/
+
+/****************************/
+/* Design and Color Controls */
+/****************************/
+
+/* Dark Contrast */
+body.flexiview-dark-contrast
+	*
+	:not(.slider):not(.toggle-text-on):not(.toggle-text-off):not(.flexiview-option-icon):not(.acc-excluded *):not(
+		.flexiview-modal *
+	),
+body.flexiview-dark-contrast > blockquote,
+body.flexiview-dark-contrast > .reset-button {
+	color: #fff !important;
+	background-color: #181818 !important;
+}
+
+/* Invert Colors */
+html.flexiview-invert-colors {
+	-webkit-filter: invert(1) !important;
+	filter: invert(1) !important;
+	-moz-filter: invert(1) !important;
+	-ms-filter: invert(1) !important;
+	-o-filter: invert(1) !important;
+}
+
+/* Light Contrast */
+body.flexiview-light-contrast
+	*
+	:not(.slider):not(.toggle-text-on):not(.toggle-text-off):not(.acc-excluded *):not(.flexiview-modal *),
+body.flexiview-light-contrast > blockquote,
+body.flexiview-light-contrast > .reset-button {
+	color: #075f39 !important;
+	background-color: #fff !important;
+	fill: var(--flexiview-text);
+}
+
+/* Monochrome */
+html.flexiview-monochrome {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
+/* High Contrast */
+html.flexiview-high-contrast {
+	-webkit-filter: contrast(135%);
+	filter: contrast(135%);
+	-moz-filter: contrast(135%);
+	-ms-filter: contrast(135%);
+	-o-filter: contrast(135%);
+}
+
+/* High Saturation */
+html.flexiview-high-saturation {
+	filter: saturate(140%);
+	-webkit-filter: saturate(140%);
+	-moz-filter: saturate(140%);
+	-ms-filter: saturate(140%);
+	-o-filter: saturate(140%);
+}
+
+/* Low Saturation */
+html.flexiview-low-saturation {
+	-webkit-filter: saturate(80%);
+	filter: saturate(80%);
+	-moz-filter: saturate(80%);
+	-ms-filter: saturate(80%);
+	-o-filter: saturate(80%);
+}
+
+/****************************/
+/* Media and Other Controls */
+/****************************/
+
+/* Mute Sounds */
+/* JS Handled */
+
+/* Hide Images */
+body.flexiview-hide-images img,
+body.flexiview-hide-images video {
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+body.flexiview-hide-images * {
+	background-image: none !important;
+}
+/* Reading Guide */
+.flexiview-reading-guide-element {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: auto;
+	right: auto;
+	margin: auto;
+	max-width: 90%;
+	pointer-events: none;
+	z-index: 999999;
+	width: 60%;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #007cba;
+	border: 2px solid #000;
+
+	&::before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid #000;
+		margin-top: -12px;
+	}
+}
+/* Stop Animations */
+body.flexiview-stop-animations * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+	-webkit-animation-fill-mode: forwards !important;
+	-moz-animation-fill-mode: forwards !important;
+	-ms-animation-fill-mode: forwards !important;
+	-o-animation-fill-mode: forwards !important;
+	animation-fill-mode: forwards !important;
+	-webkit-animation-iteration-count: 1 !important;
+	-moz-animation-iteration-count: 1 !important;
+	-ms-animation-iteration-count: 1 !important;
+	-o-animation-iteration-count: 1 !important;
+	animation-iteration-count: 1 !important;
+	-webkit-animation-duration: 0.01s !important;
+	-moz-animation-duration: 0.01s !important;
+	-ms-animation-duration: 0.01s !important;
+	-o-animation-duration: 0.01s !important;
+	animation-duration: 0.01s !important;
+	transition-timing-function: step-end !important;
+	transition-duration: 0s !important;
+	animation-timing-function: step-end !important;
+	animation-iteration-count: 1 !important;
+	animation-duration: 0s !important;
+}
+
+/* Reading Mask */
+body.flexiview-reading-mask .flexiview-reading-mask-top,
+body.flexiview-reading-mask .flexiview-reading-mask-bottom {
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 999999;
+	background-color: var(--flexiview-reading-mask);
+}
+body.flexiview-reading-mask .flexiview-reading-mask-top {
+	top: 0;
+	bottom: auto;
+}
+body.flexiview-reading-mask .flexiview-reading-mask-bottom {
+	bottom: 0;
+	top: auto;
+}
+
+/* Highlight Hover */
+body.flexiview-highlight-hover *:hover {
+	outline-style: solid !important;
+	outline-color: var(--flexiview-accent) !important;
+	outline-width: var(--flexiview-outline-width) !important;
+	outline-offset: var(--flexiview-outline-offset) !important;
+}
+
+/* Highlight Focus */
+body.flexiview-highlight-focus *:focus {
+	outline-style: solid !important;
+	outline-color: var(--flexiview-accent) !important;
+	outline-width: var(--flexiview-outline-width) !important;
+	outline-offset: var(--flexiview-outline-offset) !important;
+}
+
+/* Large Cursor */
+body.flexiview-large-cursor,
+body.flexiview-large-cursor * {
+	cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 33.33 50'%3E%3Cpath fill='%23000' d='M16.67,49.5a.56.56,0,0,1-.5-.31L10.29,36.43,1.46,47.22a.56.56,0,0,1-.42.2l-.18,0a.56.56,0,0,1-.36-.51V1A.54.54,0,0,1,.83.54.52.52,0,0,1,1,.5a.57.57,0,0,1,.39.16L32.68,31.91a.54.54,0,0,1-.39.92H18.55l5.9,12.78a.51.51,0,0,1,0,.42.53.53,0,0,1-.29.3l-7.29,3.13A.52.52,0,0,1,16.67,49.5Z'/%3E%3Cpath fill='%23fff' d='M2,3.35l28,28H16.21l1.31,2.84,5.16,11.17-5.53,2.37L12,36.53l-1.33-2.9-2,2.47L2,44.19V3.35M1,0a1.14,1.14,0,0,0-.4.08A1,1,0,0,0,0,1V46.87a1.06,1.06,0,0,0,.69,1,1.07,1.07,0,0,0,.35.06,1.06,1.06,0,0,0,.81-.38l8.32-10.17,5.55,12a1,1,0,0,0,1.36.51l7.29-3.12a1,1,0,0,0,.53-1.39L19.34,33.33h13A1,1,0,0,0,33,31.55L1.78.3A1.09,1.09,0,0,0,1,0Z'/%3E%3C/svg%3E")
+			15 0,
+		default !important;
+}
+body.flexiview-large-cursor * input,
+body.flexiview-large-cursor * textarea,
+body.flexiview-large-cursor * select,
+body.flexiview-large-cursor * a,
+body.flexiview-large-cursor * button,
+body.flexiview-large-cursor * .flexiview-option-toggle,
+body.flexiview-large-cursor * [role='button'],
+body.flexiview-large-cursor * input,
+body.flexiview-large-cursor * textarea,
+body.flexiview-large-cursor * select:hover,
+body.flexiview-large-cursor * a:hover,
+body.flexiview-large-cursor * button:hover,
+body.flexiview-large-cursor * .flexiview-option-toggle:hover,
+body.flexiview-large-cursor * [role='button']:hover,
+body.flexiview-large-cursor .flexiview-cursor-pointer {
+	cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cpath d='m12.6 27.5c-0.1 0-0.1-0.1-0.2-0.1-0.8-0.6-1.6-1.3-2.4-2-1.1-0.9-2.3-1.9-3.2-2.7-0.6-0.5-1.3-0.8-1.9-1-0.4-0.1-0.8-0.1-1.1 0-0.2 0.1-0.4 0.3-0.6 0.6-0.2 0.4-0.3 1-0.2 1.8 0 0.7 0.3 1.4 0.6 2.2 0.5 1.1 1.1 2.1 1.6 2.7l0.1 0.1 9.4 13.6c0.1 0.2 0.2 0.4 0.2 0.6 0.2 1.6 0.5 2.7 1 3.5 0.4 0.5 0.8 0.8 1.4 0.8h14.7 0.1c0.9 0 1.8-0.3 2.5-0.8 0.8-0.6 1.6-1.5 2.3-2.7v-0.1c0.3-0.5 0.6-1.1 1-1.6 1.5-2.5 2.8-4.7 3-7.8l-0.1-4.3v-0.2-1c0-2.8 0.1-6.3-2.5-6.8h-1.6c0 0.8-0.1 1.6-0.1 2.4 0 0.7-0.1 1.4-0.1 2 0 0.7-0.6 1.3-1.2 1.3s-1.3-0.5-1.3-1.2c0-0.6 0-1.4 0.1-2.2 0.2-2.7 0.4-5.7-1.8-6.1h-1.6-0.3c0 1 0 2-0.1 2.9 0 0.7-0.1 1.4-0.1 2 0 0.7-0.6 1.3-1.2 1.3-0.7 0-1.2-0.6-1.2-1.3 0-0.6 0-1.4 0.1-2.2 0.2-2.7 0.4-5.7-1.8-6.1h-1.6-0.3v4.9c0 0.7-0.6 1.3-1.2 1.3-0.7 0-1.2-0.6-1.2-1.3v-13c0-2.2-0.9-3.6-2-4.1-0.4-0.2-0.9-0.3-1.3-0.3s-0.9 0.1-1.3 0.3c-1.1 0.6-2 2-2 4.2v22.8c0 0.7-0.6 1.3-1.2 1.3-0.7 0-1.2-0.6-1.2-1.3l-0.2-2.4zm11.6-14.8h0.3 1.7 0.3c2.3 0.4 3.3 1.7 3.7 3.4 0.2-0.1 0.3-0.1 0.5-0.1h1.7 0.3c2.5 0.4 3.4 1.9 3.8 3.8h0.2 1.7 0.3c4.7 0.7 4.6 5.5 4.6 9.3v1l0.1 4.4v0.1c-0.2 3.7-1.6 6.2-3.3 9-0.3 0.5-0.6 0.9-0.9 1.6v0.1c-0.9 1.5-1.9 2.7-3.1 3.5s-2.5 1.2-3.9 1.3h-0.1-14.8c-1.5 0-2.6-0.6-3.5-1.9-0.7-1-1.1-2.5-1.4-4.3l-9.2-13.3c-0.5-0.7-1.3-1.9-1.9-3.2-0.4-1-0.7-2-0.8-3-0.1-1.2 0.1-2.2 0.4-2.9 0.4-0.9 1.1-1.6 1.9-1.9s1.6-0.4 2.5-0.2c1 0.2 2.1 0.7 3 1.5 0.8 0.6 2 1.7 3.2 2.7l1 0.8v-17.4c0-3.3 1.5-5.5 3.3-6.4 0.9-0.4 1.7-0.6 2.6-0.6 0.8 0 1.7 0.2 2.4 0.6 1.9 1 3.4 3.1 3.4 6.4v5.7z'/%3E%3Cpath d='m12.6 27.5c-0.1 0-0.1-0.1-0.2-0.1-0.8-0.6-1.6-1.3-2.4-2-1.1-0.9-2.3-1.9-3.2-2.7-0.6-0.5-1.3-0.8-1.9-1-0.4-0.1-0.8-0.1-1.1 0-0.2 0.1-0.4 0.3-0.6 0.6-0.2 0.4-0.3 1-0.2 1.8 0 0.7 0.3 1.4 0.6 2.2 0.5 1.1 1.1 2.1 1.6 2.7l0.1 0.1 9.4 13.6c0.1 0.2 0.2 0.4 0.2 0.6 0.2 1.6 0.5 2.7 1 3.5 0.4 0.5 0.8 0.8 1.4 0.8h14.7 0.1c0.9 0 1.8-0.3 2.5-0.8 0.8-0.6 1.6-1.5 2.3-2.7v-0.1c0.3-0.5 0.6-1.1 1-1.6 1.5-2.5 2.8-4.7 3-7.8l-0.1-4.3v-0.2-1c0-2.8 0.1-6.3-2.5-6.8h-1.6c0 0.8-0.1 1.6-0.1 2.4 0 0.7-0.1 1.4-0.1 2 0 0.7-0.6 1.3-1.2 1.3s-1.3-0.5-1.3-1.2c0-0.6 0-1.4 0.1-2.2 0.2-2.7 0.4-5.7-1.8-6.1h-1.6-0.3c0 1 0 2-0.1 2.9 0 0.7-0.1 1.4-0.1 2 0 0.7-0.6 1.3-1.2 1.3-0.7 0-1.2-0.6-1.2-1.3 0-0.6 0-1.4 0.1-2.2 0.2-2.7 0.4-5.7-1.8-6.1h-1.6-0.3v4.9c0 0.7-0.6 1.3-1.2 1.3s-1.2-0.6-1.2-1.3v-13c0-2.2-0.9-3.6-2-4.1-0.4-0.2-0.9-0.3-1.3-0.3s-0.9 0.1-1.3 0.3c-1.1 0.6-2 2-2 4.2v22.8c0 0.7-0.6 1.3-1.2 1.3-0.7 0-1.2-0.6-1.2-1.3l-0.2-2.4z' fill='%23fff'/%3E%3C/svg%3E%0A")
+			15 0,
+		auto !important;
+}
